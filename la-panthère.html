@@ -1,12 +1,10 @@
 <!doctype html>
-<!--corriger la balise langue-->
-<html lang="Default">
+<html lang="fr"> <!--correction of the language-->
 <head>
     <meta charset="utf-8">
-	<!--corriger la répétyiyon des keywords-->
-    <meta name="keywords" content="seo, google, site web, site internet, agence design paris, agence design, agence design,agence design,agence design,agence design,agence design,agence design,agence design,agence design">
-    <meta name="description" content=""> <!--2redaction d'un description entre 70 et 320 caractères-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta name="description" content="La panthère,la meilleure entreprise de webdesign à Lyon,l'expertise dans la création de sites web au service de votre succès! ">
+    <!--description de la page de la page d'accueil-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
@@ -21,27 +19,29 @@
 	<script src="./js/jquery.touchSwipe.js" defer></script>
 	<script src="./js/gmaps.js"></script>
 
-    <title>.</title><!--1présence d'un point dans la balise titre--> <!--3nommer-les url avec des noms compréhensibles-->
+    <title>La panthère,meilleure entreprise de web design à Lyon</title><!--1présence d'un point dans la balise titre--> <!--3nommer-les url avec des noms compréhensibles-->
 
     
 <!-- Analytics -->
+<!--AJOUTER LE TAG GOOGLE ANALYTICS-->
 <!-- Analytics END -->
     
 </head>
 <body>
 <!-- Principal conteneur -->
-<div class="page-container">
+<main class="page-container">
     
 <!-- bloc-0 -->
-<div class="bloc bgc-white l-bloc " id="bloc-0">
+<header class="bloc bgc-white l-bloc " id="bloc-0">
 	<div class="container bloc-sm"> <!--utitlisation des   balise header -->
 
 		<nav class="navbar row">
 			<!--ajouter des sections pour les différentes zones-->
 			<div class="navbar-header"><!--4présence de balise style dans le markup supprimer les style-->
-				<div class="keywords" style="color:#cccccc;font-size:1px;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div>
-				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="paris web design logo agence web meilleure agence" height="40" /></a>
-				<div class="keywords" style="color:#cccccc;font-size:1px;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div>
+				<a class="navbar-brand" href="index.html"><!--présence de lien dans le logo alors qu'il y'a déjà des liens-->
+					<img src="img/agence-la-panthere-monochrome.svg" 
+					alt="paris web design logo agence web meilleure agence" 
+					height="40"></a>
 				<!--button-->
 				<button id="nav-toggle" 
 					type="button" 
@@ -60,24 +60,35 @@
 					<li>
 						<a href="index.html">Accueil</a>
 					</li>
+					
 					<li>
+						<a href="#bloc-2-services">Nos services</a>
 					</li><!--liens vide-->
+
 					<li>
-						<a href="page2.html">page2 &gt;</a><!--utilisation de la pagination next and prev-->
+						<a href="#bloc-3-what-i-do">Notre mission</a>
+					</li><!--liens vide-->
+					
+					<li>
+						<a href="#bloc-4-portfolio">Nos réalisations</a>
+					</li><!--liens vide-->
+
+					<li>
+						<a href="la-panthère2.html">Contactez-nous</a><!--utilisation de la pagination next and prev-->
 					</li>
 				</ul>
 			</div>
 		</nav>
 	</div>
-</div>
+</header>
 <!-- bloc-0 END -->
 
 <!-- bloc-1-presentation -->
-<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
+<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
 	<div class="container bloc-lg">
 		<div class="row tight-width-whitespace">
 			<div class="col-sm-12">
-				<img src="img/logo.png" class="center-block image-resize-mode" width="100" alt="Agence La Panthère, agence web paris, création logo paris" />
+				<img src="img/logo.png" class="center-block image-resize-mode" width="100" alt="Agence La Panthère, agence web paris, création logo paris"> <!--alt incorrect-->
 				<h1 class="text-center hero-bloc-text tc-white ">
 					Agence La Panthère
 				</h1>
@@ -87,16 +98,16 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <!-- bloc-1-presentation END -->
 
 <!-- bloc-2-services -->
-<div class="bloc bgc-white l-bloc" id="bloc-2-services">
+<section class="bloc bgc-white l-bloc" id="bloc-2-services">
 	<div class="container bloc-md">
 		<div class="row">
 			<div class="col-sm-12 text-center">
 				<!--correction h2-->
-				<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title.png" />
+				<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title.png"><!--alt incorrect-->
 			</div>
 		</div>
 		<div class="row voffset-lg med-width-whitespace">
@@ -140,17 +151,17 @@
 		<div class="row voffset-lg voffset">
 			<!--texte image same alt-->
 			<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
-				<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/citation.png" />
+				<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/citation.png"><!--alt incorrect-->
 				<!--changer l'image en texte,citation-->
 			</div>
 			<!---->
 		</div>
 	</div>
-</div>
+</section>
 <!-- bloc-2-services END -->
 
 <!-- bloc-3-what-i-do -->
-<div class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do">
+<section class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do">
 	<div class="container bloc-lg">
 		<div class="row tight-width-whitespace black-background">
 			<div class="col-sm-12">
@@ -171,16 +182,16 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <!-- bloc-3-what-i-do END -->
 
 <!-- bloc-4-portfolio -->
-<div class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
+<section class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12 text-center">
 				<!--texte image same alt-->
-				<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title2.png" />
+				<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title2.png"><!--alt incorrect-->
 				<!---->
 			</div>
 		</div>
@@ -251,11 +262,11 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section
 <!-- bloc-4-portfolio END -->
 
 <!-- bloc-5-cta -->
-<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
+<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
 	<div class="container bloc-lg">
 		<div class="row">
 			<h2 class="mg-md text-center tc-white">
@@ -271,7 +282,7 @@
 <!-- bloc-5-cta END -->
 
 <!-- Footer - bloc-8 -->
-<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
@@ -303,7 +314,7 @@
 							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
-					<div class="keywords" style="color:#F3976C;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div>
+					
 				</div>
 				<!--selection de liens-->
 				<div class="row">
@@ -349,10 +360,10 @@
 			</div>
 		</div>
 	</div>
-</div>
+</footer>
 <!-- Footer - bloc-8 END -->
 
-</div>
+</main>
 <!-- Principal conteneur END -->
     
 
