@@ -50,20 +50,23 @@ ul{
     min-width: 100%;
 }
 
-footer{
-    width: 100%;
-    display: flex;
-
-}
 /*footer*/
-footer .row .col-sm-4{
-    padding-top: 20px;
-    width: 100%;
+
+footer{
+    text-align: center;
+}
+footer .col-sm-12 .row{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
+    gap:20px;
+    font-size: 15px;
+}
+footer .col-sm-4{
+    margin-top: 20px;
+    width:100%;
+}
+footer .col-sm-4 ul{
+   text-align: center;
+   margin-top: 10px;
 }
 .bloc-lg {
     padding: 100px 50px;
