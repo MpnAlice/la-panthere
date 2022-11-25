@@ -63,6 +63,9 @@ footer .col-sm-12 .row{
 footer .col-sm-4{
     margin-top: 20px;
     width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 footer .col-sm-4 ul{
    text-align: center;
