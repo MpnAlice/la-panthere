@@ -55,11 +55,7 @@ ul{
 footer{
     text-align: center;
 }
-footer .col-sm-12 .row{
-    display: flex;
-    gap:20px;
-    font-size: 15px;
-}
+
 footer .col-sm-4{
     margin-top: 20px;
     width:100%;
